@@ -1,0 +1,101 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --tuiter-roxo: #837eb6;
+  --tuiter-roxo-escuro: #6f6f8c;
+}
+
+body{
+  color:#0f1419;
+  background-color: #f5f8fa;
+  -webkit-font-smoothing: antialiased;
+}
+
+body, input, textarea, button{
+  font: 400 1rem 'Manrope', sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+}
+
+/* Page: Timeline */
+
+.layout{
+  margin: 0 auto;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns:300px 1fr;
+}
+
+.content{
+  border-left: 1px solid #eadeed;
+  border-radius: 1px solid #eadeed;
+}
+
+.new-tuiter-form{
+  padding: 1.5rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.new-tuiter-form label{
+  display: flex;
+  gap: 0.74rem;
+}
+
+.new-tuiter-form label img{
+  width: 3.46rem;
+  height: 3.46rem;
+  color: var(--tuiter-roxo);
+  border-radius: 100%;
+}
+
+.new-tuiter-form label textarea{
+  flex: 1;
+  height: 5.5rem;
+  border: 0;
+  border-radius: .57rem;
+  padding: 1.25rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #0f1419;
+  background-color: #f5f8fa;
+  resize: none;
+}
+
+.new-tuiter-form label textarea:focus{
+  outline: none;
+}
+
+.new-tuiter-form label textarea::placeholder{
+  color: #3a263a;
+  opacity: 0.7;
+}
+
+.new-tuiter-form button[type="submit"]{
+  margin-left: auto;
+  background: var(--tuiter-roxo);
+  border-radius: 12rem;
+  padding: 0.75rem 1.4rem;
+  border: 0;
+  color: #f5f8fa;
+  font-size: 1rem;
+  font-weight: 800;
+  transition: .9s;
+  box-shadow: 0 0 0 0 rgba(0,0,0,0.2);
+}
+
+.new-tuiter-form button[type="submit"]:hover{
+  background: var(--tuiter-roxo-escuro);
+  box-shadow: 0 0 0 .45rem rgba(0,0,0,0);
+}

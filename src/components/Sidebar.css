@@ -1,0 +1,58 @@
+.sidebar{
+  padding: 1.5rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sidebar .logo{
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.sidebar .new-tuiter{
+  width: 12rem;
+  height: 2.4rem;
+  background-color: var(--tuiter-roxo);
+  border-radius: 1.2rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f5f8fa;
+  font-size: 1rem;
+  font-weight: 900;
+  transition: 0.9s;
+  box-shadow: 0 0 0 0 rgba(0,0,0,0.2);
+}
+
+.sidebar .new-tuiter:hover{
+  background-color: var(--tuiter-roxo-escuro);
+  box-shadow: 0 0 0 .45rem rgba(0,0,0,0);
+}
+
+.main-navigation{
+  display: flex;
+  flex-direction: column;
+  gap: 1.96rem;
+}
+
+.main-navigation a{
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  border-radius: 1.2rem;
+  transition: 0.9s;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.main-navigation a svg{
+  width: 2rem;
+  height: 2rem;
+}
+
+.main-navigation a.active{
+  color: var(--tuiter-roxo);
+}
