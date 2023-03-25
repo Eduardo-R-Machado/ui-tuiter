@@ -1,0 +1,61 @@
+.answer-tuiter-form{
+  padding: 1.5rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-bottom: 1px solid #eadeed;
+}
+
+.answer-tuiter-form label{
+  display: flex;
+  gap: 0.74rem;
+  align-items: center;
+  flex: 1;
+}
+
+.answer-tuiter-form label img{
+  width: 3.46rem;
+  height: 3.46rem;
+  color: var(--tuiter-roxo);
+  border-radius: 100%;
+}
+
+.answer-tuiter-form label textarea{
+  flex: 1;
+  border: 0;
+  border-radius: .57rem;
+  padding: 1.25rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #0f1419;
+  background-color: #f5f8fa;
+  margin-top: 1rem;
+  resize: none;
+}
+
+.answer-tuiter-form label textarea:focus{
+  outline: none;
+}
+
+.answer-tuiter-form label textarea::placeholder{
+  color: #3a263a;
+  opacity: 0.7;
+}
+
+.answer-tuiter-form button[type="submit"]{
+  margin-left: auto;
+  background: var(--tuiter-roxo);
+  border-radius: 12rem;
+  padding: 0.75rem 1.4rem;
+  border: 0;
+  color: #f5f8fa;
+  font-size: 1rem;
+  font-weight: 800;
+  transition: .9s;
+  box-shadow: 0 0 0 0 rgba(0,0,0,0.2);
+}
+
+.answer-tuiter-form button[type="submit"]:hover{
+  background: var(--tuiter-roxo-escuro);
+  box-shadow: 0 0 0 .45rem rgba(0,0,0,0);
+}

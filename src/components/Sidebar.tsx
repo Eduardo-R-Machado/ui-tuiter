@@ -1,42 +1,46 @@
 import { BellRinging, BookBookmark, DotsThreeCircle, Envelope, FileText, Hash, House, User } from "phosphor-react";
-import tuiterLogo from '../assets/logo-tuite.svg'; 
+import { NavLink } from "react-router-dom";
+
+import tuiterLogo from '../assets/logo-tuite.svg';
+
+
 
 import './Sidebar.css';
 
 export default function Sidebar() {
   return (
     <aside className='sidebar'>
-    <img src={tuiterLogo} className='logo' alt='Logo Tuite' />
+      <img src={tuiterLogo} className='logo' alt='Logo Tuite' />
 
-    <nav className='main-navigation'>
-      <a className='active' href="">
-        <House weight='fill'/>
-        Home</a>
-      <a href="">
-        <Hash weight='regular'/>
-        Explorar</a>
-      <a href="">
-        <BellRinging weight='regular'/>
-        Notificações
-        </a>
-      <a href="">
-        <Envelope weight='regular'/>
-        Mensagens</a>
-      <a href="">
-        <BookBookmark weight='regular'/>
-        Marcações</a>
-      <a href="">
-        <FileText weight='regular'/>
-        Listas</a>
-      <a href="">
-        <User />
-        Perfil</a>
-      <a href="">
-        <DotsThreeCircle />
-        Mais</a>
-    </nav>
+      <nav className='main-navigation'>
+        <NavLink to="/">
+          <House weight='fill' />
+          <span> Home </span>    </NavLink>
+        <NavLink to="/hashtags">
+          <Hash weight='regular' />
+          <span> Explorar</span> </NavLink>
+        <NavLink to="/notifications">
+          <BellRinging weight='regular' />
+          <span>Notificações </span>
+        </NavLink>
+        <NavLink to="messages">
+          <Envelope weight='regular' />
+          <span>Mensagens </span></NavLink>
+        <NavLink to="marks">
+          <BookBookmark weight='regular' />
+          <span> Marcações</span></NavLink>
+        <NavLink to="lists">
+          <FileText weight='regular' />
+          <span> Listas</span>   </NavLink>
+        <NavLink to="profile">
+          <User />
+          <span> Perfil</span>   </NavLink>
+        <NavLink to="more">
+          <DotsThreeCircle />
+          <span>Mais </span>     </NavLink>
+      </nav>
 
-    <button className='new-tuiter'>Tuite</button>
-  </aside>
+      <button className='new-tuiter'>Tuite</button>
+    </aside>
   )
 }

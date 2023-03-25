@@ -1,0 +1,21 @@
+
+.layout{
+  margin: 0 auto;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns:300px 1fr;
+}
+
+.content{
+  border-left: 1px solid #eadeed;
+  border-radius: 1px solid #eadeed;
+}
+
+@media (max-width: 700px){
+  .layout{
+    grid-template-columns: 80px 1fr;
+  }
+  .content{
+    border-left: none;
+  }
+}

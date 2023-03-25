@@ -1,4 +1,5 @@
 import { ArrowsClockwise, ChatCircle, HeartStraightBreak } from 'phosphor-react';
+import { Link } from 'react-router-dom';
 import './Tuite.css';
 
 interface TuiteProps {
@@ -7,7 +8,7 @@ interface TuiteProps {
 
 export function Tuite(props: TuiteProps) {
   return (
-      <a href='#' className='tuite'>
+      <Link to='/status' className='tuite'>
         <img src='https://github.com/eduardo-r-machado.png' alt='Icon perfi Eduardo Machado' />
 
         <div className='tuite-content'>
@@ -23,6 +24,6 @@ export function Tuite(props: TuiteProps) {
               <button><HeartStraightBreak/> 20</button>
             </div>
         </div>
-       </a>
+       </Link>
   )
 }
